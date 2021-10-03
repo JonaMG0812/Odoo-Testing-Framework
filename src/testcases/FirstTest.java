@@ -39,7 +39,8 @@ public class FirstTest {
 	
 	// Some Data
 	String creditCardNum = "4242424242424242";
-	String creditCardDate = "1126";
+	String creditCardDateMonth = "11";
+	String creditCardDateYear = "66";
 	String creditCardCvv = "1234";
 	String creditCardHolderName = "Mr. Test";
 	  
@@ -123,9 +124,10 @@ public class FirstTest {
 	  driver.findElement(By.xpath(cardExpiryXpath)).click();
 	  driver.findElement(By.xpath(cardExpiryXpath)).clear();
 	  wait.until(ExpectedConditions.elementToBeClickable(By.xpath(cardExpiryXpath)));
-	  //driver.findElement(By.xpath(cardExpiryXpath)).sendKeys(creditCardDate);
+	  driver.findElement(By.xpath(cardExpiryXpath)).sendKeys(creditCardDateMonth);
+	  driver.findElement(By.xpath(cardExpiryXpath)).sendKeys(creditCardDateYear);
 	  //jsexecutor.executeScript("document.getElementByXpath('"+cardExpiryXpath+"').value='"+creditCardDate+"';");
-	  jsexecutor.executeScript("$x('//div/input[@id='cc_expiry' and @name='cc_expiry']').value='11 / 22'");
+	  //jsexecutor.executeScript("$x('//div/input[@id='cc_expiry' and @name='cc_expiry']').value='11 / 22'");
 	  String cardCvvXpath = "//div/input[@id='cvc' and @name='cvc']";
 	  driver.findElement(By.xpath(cardCvvXpath)).click();
 	  driver.findElement(By.xpath(cardCvvXpath)).sendKeys(creditCardCvv);
