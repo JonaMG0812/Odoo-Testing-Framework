@@ -32,7 +32,7 @@ public class Base {
 	}
 	
 	public WebDriverWait waitConst() {
-		wait = new WebDriverWait(driver, 10);
+		wait = new WebDriverWait(driver, 20);
 		return wait;
 	}
 	
@@ -44,8 +44,8 @@ public class Base {
 		return element.getText();
 	}
 	
-	public String getText(By locator) {
-		return driver.findElement(locator).getText();
+	public String getText(String locator) {
+		return driver.findElement(By.xpath(locator)).getText();
 	}
 	
 	public void writeText(String inputText, By locator) {
@@ -63,15 +63,22 @@ public class Base {
 		driver.findElement(locator).click();
 	}
 	
-	public Boolean idDisplayed(By locator) {
+	public Boolean isDisplayed(String locator) {
 		try {
-			return driver.findElement(locator).isDisplayed();
+			 wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+			return driver.findElement(By.xpath(locator)).isDisplayed();
 		} catch (NoSuchElementException e) {
 			return false;
 		}
 	}
 	
-	// TODO: Write the wait methods
+	public Boolean isDisplayedWaiting (String locator) {
+
+		try{ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
+
+		} catch (NoSuchElementException e) { return false;} return true;}
+	
+	
 	public void waitUntilPresent(By locator) {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		}
