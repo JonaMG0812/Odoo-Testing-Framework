@@ -1,5 +1,13 @@
 # Odoo Ecommerce Testing Framework 
-Description WIP
+This framework test an Odoo webpage to validate a shopping process flow.
+
+The test cases are:
+
+1) Log In
+2) Search Item
+3) Add Item
+4) Checkout
+5) Pay Item
 
 ## Some nice hard coded dependencies.
 ## This project  assumes the following points:
@@ -12,16 +20,17 @@ Description WIP
 -----------------------------------------------------
 ## Goals
 
-###TODO
+### TODO
 - [ ] Test Matrix
-- [ ] Test Cases
-- [ ] Code Proyect
+- [x] Test Cases
+- [x] Code Proyect
     * [x] Test scripts
     * [x] Locators
     * [x] Page Object Model
     * [ ] Data providers
-    * [ ] Reports
+    * [x] Reports
 - [ ] Documentation
 - [x] Git repository
-- [ ] Demo and slides
+- [ ] Demo
+- [x] Slides
 
