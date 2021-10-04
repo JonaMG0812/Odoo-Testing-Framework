@@ -1,5 +1,5 @@
-# Odoo-Testing-Framework
-Odoo Testing Framework
+# Odoo Ecommerce Testing Framework 
+Description WIP
 
 ## Some nice hard coded dependencies.
 ## This project  assumes the following points:
