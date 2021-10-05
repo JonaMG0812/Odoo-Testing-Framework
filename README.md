@@ -28,9 +28,20 @@ Download or clone the repo: eg. git clone via HTTPS: https://github.com/JonaMG08
 
 ## Scaffolding and Directory tree
 This framework is using POM because reduce code duplication and improves test maintenance, you can view the directory tree to get a general view of structure.
+```bash .
+└── Odoo-Testing-Framework
+   ├── README.md
+   ├── TestCases.md
+   └── src
+      └── pom
+         ├── AllSuiteTest.java
+         ├── Base.java
+         ├── EcommercePage.java
+         └── TestNGSuiteTest.xml
+```
 
 ## Data to test
-If you decide to use this framework and test with your own data, you have to change the next files:
+If you decide to use this framework and test with your own data, you have to change the next files: WIP
 
 ## Test Cases
 The following test cases are contemplated in this framework:
@@ -41,3 +52,5 @@ The following test cases are contemplated in this framework:
    4) Add Item
    5) Checkout
    6) Pay Item
+
+If you want to see more info about it, check this [Link](https://github.com/JonaMG0812/Odoo-Testing-Framework/blob/main/TestCases.md).
