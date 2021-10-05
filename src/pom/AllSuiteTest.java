@@ -14,7 +14,6 @@ public class AllSuiteTest {
 	EcommercePage ecommercePage;	
 	Data dataSet;
 
-
 @BeforeClass
 	public void beforeClass() {
 		ecommercePage = new EcommercePage(driver, wait);
@@ -23,11 +22,15 @@ public class AllSuiteTest {
 		dataSet = new Data();
 	}
 
-@Test (description="This method validates Sign Up")
-	public void LoginTest() {
+@Test(description="This method validates the correct loading of the main page")
+	public void LoadMainPage() {
 		ecommercePage.visit(dataSet.testingURL);
 		Boolean asertionLoadPage = ecommercePage.isDisplayed(dataSet.signInXpath);
 		Assert.assertTrue(asertionLoadPage,"The page could not be loaded.");
+	}
+
+@Test (description="This method validates the Sign Up", dependsOnMethods="LoadMainPage")
+	public void LoginTest() {
 		ecommercePage.loginUser(dataSet.userEmail, dataSet.userPassword);
 		Boolean asertionLogin = ecommercePage.isDisplayed(dataSet.userMenuSpanXpath);
 		Assert.assertTrue(asertionLogin,"The login could not be made.");

@@ -50,6 +50,7 @@ public class EcommercePage extends Base {
 		// Here we expect to be in the shopping cart and start the checkout process
 		waitUntilClickable(By.xpath(dataSet.checkOutXpath));
 		click(By.xpath(dataSet.checkOutXpath));
+		// The next step could be activated by other users in the test environment
 		//waitUntilClickable(By.xpath(nextExtraInfoXpath));
 		//click(By.xpath(nextExtraInfoXpath));
 	}

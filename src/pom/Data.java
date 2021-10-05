@@ -2,10 +2,11 @@ package pom;
 
 public class Data {
 	// Testing URL
-	String testingURL = "http://10368388-14-0-all.runbot63.odoo.com/"; // original
+	String testingURL = "http://10374847-14-0-all.runbot44.odoo.com/";
+	
 	// Data
 	String userEmail = "demo";
-	String userPassword = "demodemo";
+	String userPassword = "demo";
 	String itemName = "Drawer";
 	
 	// Payment Data

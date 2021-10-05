@@ -1,5 +1,5 @@
 # Odoo Ecommerce Testing Framework 
-The Odoo-Testing-Framework is a Testing-Framework made in Java with the use of Selenium and TestNG capable of automating and validating a shopping process flow within a test page provided by the Odoo CRM.
+The Odoo-Testing-Framework is a Testing-Framework made in Java with the use of Selenium and TestNG capable of automating and validating a shopping process flow within a test page provided by the Odoo ERP.
 
 ## Work it out
 These instructions will help you keep a copy of this project on your machine to review, develop, or play with the code. Have fun. 
@@ -8,41 +8,49 @@ These instructions will help you keep a copy of this project on your machine to 
 To work on this project lets assume the following points:
 
 - Have a computer with Windows 10
-- Java 
-- The working directory mustt be C:\Academy
+- Java SE 1.8
+- Eclipse IDE
+- TestNG on Eclipse IDE
+- The working directory must be C:\Academy
 - There's a Webdrivers directory called 'drivers' with at least chromedriver.exe (check your browser version to maintain compatibility)
-- The working directory contains 'selenium-server-standalone-3.141.59.jar'.
+- The working directory contains 'selenium-server-standalone-3.141.59.jar'
 
-The test cases are:
+### Installation
 
-1) Log In
-2) Search Item
-3) Add Item
-4) Checkout
-5) Pay Item
+Download or clone the repo: eg. git clone via HTTPS: https://github.com/JonaMG0812/Odoo-Testing-Framework.git
 
-## Some nice hard coded dependencies.
-## This project  assumes the following points:
-- The working directory is C:\Academy
-- There's a Webdrivers directory called 'drivers' with at least chromedriver.exe (check your browser version to maintain compatibility)
-- The working directory contains 'selenium-server-standalone-3.141.59.jar
+   1) Download and unzip the file .zip or clone the repo on your working directory
+   2) Open it on your prefered IDE (eg. Eclipse)
+   3) Copy 'selenium-server-standalone-3.141.59.jar' on root working directory
+   4) Copy 'chromedriver.exe' on the 'drivers' folder
+   5) On some cases: Add TestNG library to Java Build Path
+   7) Run the script
 
-## P.D. Check the testing URL.
+## Scaffolding and Directory tree
+This framework is using POM because reduce code duplication and improves test maintenance, you can view the directory tree to get a general view of structure.
+```bash .
+└── Odoo-Testing-Framework
+   ├── README.md
+   ├── TestCases.md
+   └── src
+      └── pom
+         ├── AllSuiteTest.java
+         ├── Base.java
+         ├── EcommercePage.java
+         └── TestNGSuiteTest.xml
+```
 
------------------------------------------------------
-## Goals
+## Data to test
+If you decide to use this framework and test with your own data, you have to change the next files: WIP
 
-### TODO
-- [ ] Test Matrix
-- [x] Test Cases
-- [x] Code Proyect
-    * [x] Test scripts
-    * [x] Locators
-    * [x] Page Object Model
-    * [ ] Data providers
-    * [x] Reports
-- [ ] Documentation
-- [x] Git repository
-- [ ] Demo
-- [x] Slides
+## Test Cases
+The following test cases are contemplated in this framework:
 
+   1) Load Odoo Page
+   2) Log In
+   3) Search Item
+   4) Add Item
+   5) Checkout
+   6) Pay Item
+
+If you want to see more info about it, check this [Link](https://github.com/JonaMG0812/Odoo-Testing-Framework/blob/main/TestCases.md).

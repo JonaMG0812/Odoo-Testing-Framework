@@ -72,13 +72,6 @@ public class Base {
 		}
 	}
 	
-	public Boolean isDisplayedWaiting (String locator) {
-
-		try{ wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(locator)));
-
-		} catch (NoSuchElementException e) { return false;} return true;}
-	
-	
 	public void waitUntilPresent(By locator) {
 		wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
 		}
