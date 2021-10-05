@@ -36,6 +36,7 @@ This framework is using POM because reduce code duplication and improves test ma
       └── pom
          ├── AllSuiteTest.java
          ├── Base.java
+         ├── Data.java
          ├── EcommercePage.java
          └── TestNGSuiteTest.xml
 ```
