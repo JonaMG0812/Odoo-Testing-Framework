@@ -33,6 +33,7 @@ This framework is using POM because reduce code duplication and improves test ma
 WIP
 
 ## Test Cases
+The following test cases are contemplated in this framework:
 
    1) Load Odoo Page
    2) Log In
