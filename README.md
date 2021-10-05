@@ -30,7 +30,7 @@ Download or clone the repo: eg. git clone via HTTPS: https://github.com/JonaMG08
 This framework is using POM because reduce code duplication and improves test maintenance, you can view the directory tree to get a general view of structure.
 
 ## Data to test
-WIP
+If you decide to use this framework and test with your own data, you have to change the next files:
 
 ## Test Cases
 The following test cases are contemplated in this framework:
