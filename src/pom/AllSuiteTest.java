@@ -17,6 +17,9 @@ public class AllSuiteTest {
 @BeforeClass
 	public void beforeClass() {
 		ecommercePage = new EcommercePage(driver, wait);
+		// The next line can be changed to match firefoxDriverConnection();
+		// to switch from chrome browser to firefox browser.
+		// You must have the compatible gecko driver in the drivers directory.
 		driver = ecommercePage.chromeDriverConnection();
 		wait = ecommercePage.waitConst();
 		dataSet = new Data();
