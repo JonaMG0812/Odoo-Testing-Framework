@@ -5,6 +5,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
 
 public class AllSuiteTest {
 	
@@ -19,7 +20,6 @@ public class AllSuiteTest {
 	private	String userPassword = "demo";
 	private	String itemName = "Drawer";
 
-
 @BeforeClass
 	public void beforeClass() {
 		ecommercePage = new EcommercePage(driver, wait);
@@ -27,11 +27,15 @@ public class AllSuiteTest {
 		wait = ecommercePage.waitConst();
 	}
 
-@Test (description="This method validates Sign Up")
-	public void LoginTest() {
+@Test(description="This method validates the correct loading of the main page")
+	public void LoadMainPage() {
 		ecommercePage.visit(testingURL);
 		Boolean asertionLoadPage = ecommercePage.isDisplayed(ecommercePage.signInXpath);
 		Assert.assertTrue(asertionLoadPage,"The page could not be loaded.");
+	}
+
+@Test (description="This method validates the Sign Up", dependsOnMethods="LoadMainPage")
+	public void LoginTest() {
 		ecommercePage.loginUser(userEmail, userPassword);
 		Boolean asertionLogin = ecommercePage.isDisplayed(ecommercePage.userMenuSpanXpath);
 		Assert.assertTrue(asertionLogin,"The login could not be made.");
