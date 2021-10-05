@@ -15,7 +15,7 @@ To work on this project lets assume the following points:
 - There's a Webdrivers directory called 'drivers' with at least chromedriver.exe (check your browser version to maintain compatibility)
 - The working directory contains 'selenium-server-standalone-3.141.59.jar'
 
-### Instalation
+### Installation
 
 Download or clone the repo: eg. git clone via HTTPS: https://github.com/JonaMG0812/Odoo-Testing-Framework.git
 
@@ -34,3 +34,6 @@ Download or clone the repo: eg. git clone via HTTPS: https://github.com/JonaMG08
    4) Add Item
    5) Checkout
    6) Pay Item
+
+## Where you can use or change data to test
+WIP
