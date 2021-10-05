@@ -26,6 +26,12 @@ Download or clone the repo: eg. git clone via HTTPS: https://github.com/JonaMG08
    5) On some cases: Add TestNG library to Java Build Path
    7) Run the script
 
+## Scaffolding and Directory tree
+This framework is using POM because reduce code duplication and improves test maintenance, you can view the directory tree to get a general view of structure.
+
+## Data to test
+WIP
+
 ## Test Cases
 
    1) Load Odoo Page
@@ -34,9 +40,3 @@ Download or clone the repo: eg. git clone via HTTPS: https://github.com/JonaMG08
    4) Add Item
    5) Checkout
    6) Pay Item
-
-## Data to test
-WIP
-
-## Scaffolding and Directory tree
-WIP
