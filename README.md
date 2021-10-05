@@ -37,3 +37,6 @@ Download or clone the repo: eg. git clone via HTTPS: https://github.com/JonaMG08
 
 ## Data to test
 WIP
+
+## Scaffolding and Directory tree
+WIP
