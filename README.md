@@ -35,5 +35,5 @@ Download or clone the repo: eg. git clone via HTTPS: https://github.com/JonaMG08
    5) Checkout
    6) Pay Item
 
-## Where you can use or change data to test
+## Data to test
 WIP
